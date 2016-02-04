@@ -1,0 +1,1 @@
+# GraphQL wrapper for PokeAPI
