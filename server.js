@@ -5,13 +5,7 @@ import schema from './schema';
 
 const app = express();
 
-app.get('/', (req, res) => {
-  res.status(200).json({
-    mensaje: 'Bienvenido a PokeAPI-GraphQL'
-  });
-});
-
-app.use('/graphql', graphqlHTTP({
+app.use('/', graphqlHTTP({
   schema,
   pretty: true,
   graphiql: true
